@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lugrasimo&family=Noto+Kufi+Arabic:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=REM:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;1,300;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'REM', sans-serif;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+    margin-right: 500px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 110vh;
+    background-color: #FFF;
+    border: 1px solid #FF914D;
+    /* border-bottom: 40px solid #FF914D; */
+    border-radius: 20px;
+    /* border-top-left-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+    margin: 20px;
+}
+
+header{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px 20px;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    width: 100px;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 330px;
+    margin-top: 20px;
+}
+
+.logo-section p{
+    font-size: 12px;
+    color: #000;
+    text-transform: capitalize;
+    margin-left: 320px;   
+    padding-top: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 500;
+}
+
+.logo-section p span{
+    font-size: 12px;
+    font-family: 'Comic Neue', cursive;
+    color: #FF914D;
+}
+
+.logo-section .arabic{
+    font-size: 12px;
+    color: #000;
+    text-transform: capitalize;
+    margin-left: 320px;   
+    padding-top: 10px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 500;
+}
+
+.logo-section .arabic span{
+    font-size: 12px;
+    color: #FF914D;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+hr{
+    margin-top: 7px;
+    width: 757px ;
+}
+
+.date{
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+.info{
+    width: 757px;
+    margin-top: 20px;
+    height: 100px;
+}
+/* card1 start  */
+
+.card1{
+    width: 33.33%;
+    float: right;
+    height: 75px;
+    text-align: center;
+    z-index: 100;
+    padding: 10px 10px;
+}
+
+
+.card1 .icon{
+    color: #000;
+    display: inline-flex;
+    color: #FF914D;
+    font-size: 20px;
+}
+
+.card1 .icon .tit{
+    padding: 0 15px;
+    color: #000;
+    font-size: 15px;
+}
+
+.card1 .number-1 .no{
+    font-size: 15px;
+    font-weight: 600;
+    /* padding: 10px 0; */
+    text-align: center;
+    border-bottom: 2px soild #000;
+    color: #FF914D;
+    height: 20px;
+    margin-top: 7px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100px;
+}
+.number-1{
+    display: inline-flex;
+}
+
+
+
+/* card1 end  */
+
+.number input, .date-no{
+    border: none;
+    text-align: left;
+    border-bottom: 1px soild #000;
+}
+
+/* card2 start  */
+
+.card2{
+    width: 33.33%;
+    float: left;
+    height: 75px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.number{
+    display: inline-flex;
+}
+
+
+.number input::placeholder{
+    color: #FF914D;
+}
+
+.number .year{
+    color: #000;
+    /* border: 2px solid #F2F2F2;
+    background-color: #f2f2f2; */
+    margin-top: 9px;
+    margin-left: 7px;
+    font-size: 15px;
+}
+
+.card2 .day-no{
+    width: 20px;
+    color: #FF914D;
+    font-size: 15px;
+    text-align: right;
+}
+
+.choose-input {
+    /* widh: 100pxpx; */
+    padding: 10px;
+    border: none;
+    /* border-radius: 5px; */
+    /* background-color: #f2f2f2; */
+    font-size: 16px;
+    color: #000;
+    -webkit-appearance: none; /* Remove the default arrows on Chrome/Safari */
+    -moz-appearance: none; /* Remove the default arrows on Firefox */
+    appearance: none; /* Remove the default arrows on other browsers */
+}
+
+  /* Style for the "Choose" input when clicked */
+.choose-input:focus {
+    outline: none;
+}
+
+.card2 .tit{
+    color: #000;
+    font-size: 15px;
+}
+
+.card2 .icon{
+    color: #000;
+    display: inline-flex;
+    color: #FF914D;
+    font-size: 20px;
+}
+
+.card2 .icon .tit, .card3 .icon .tit{
+    padding: 0 15px;
+    color: #000;
+    font-size: 15px;
+}
+
+.card2 .date-no{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+/* card2 end  */
+
+
+.card3{
+    width: 33.33%;
+    margin: 0 auto;
+    height: 155px;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.card3 .number-2{
+    text-align: center;
+}
+
+.card3 .icon{
+    color: #000;
+    display: inline-flex;
+    color: #FF914D;
+    font-size: 20px;
+    margin-top: 17px;
+}
+
+.card3 .no{
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FF914D;
+    border: none;
+    text-align: right;
+    width: 100px;
+}
+
+.number-2 span{
+    font-weight: 500;
+}
+
+/* check start  */
+.check{
+    width: 757px;
+    height: 120px;
+}
+
+.ck-card{
+    width: 50%;
+    /* background-color: brown; */
+    float: left;
+    height: 100px ;
+}
+
+.check .ck-icon{
+    display: inline-flex;
+    color: #FF914D;
+    float: right;
+    padding-top: 10px;
+}
+
+.check .ck-icon i{
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.check .ch1{
+    color: #000;
+}
+
+.check .check-time-atday, .ck-card2 .check-time{
+    text-align: right;
+    padding-top: 40px;
+    padding-right: 10px;
+}
+
+.check .check-time-atday span {
+    padding-top: 70px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+
+.check  .date-no{
+    margin-top: 5px;
+    margin-left: 200px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+
+.ck-card2{
+    width: 50%;
+    /* background-color: yellow; */
+    float: right;
+    height: 100px ;
+    padding-bottom: 7px;
+}
+
+.ck-card2 .number .date-no{
+    padding-bottom: 9px;
+}
+
+/* check end  */
+
+/* type start  */
+
+.tp-card{
+    width: 50%;
+    float: left;
+    height: 75px;
+}
+
+.tp-card2{
+    width: 50%;
+    float: right;
+    height: 75px ;
+}
+
+.type .tp-title{
+    display: inline-flex;
+    text-align: center;
+    float: right;
+    padding-top: 25px;
+}
+
+.type .tp-title2{
+    display: inline-flex;
+    float: right;
+    padding-top: 7px;
+}
+
+.type .tp-title i{
+    padding: 0 20px;
+    font-size: 20px;
+    color: #FF914D;
+}
+
+.type .tp-title2 i{
+    padding: 0 20px;
+    font-size: 20px;
+    color: #FF914D;
+}
+
+.tp-card #select-input{
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 15px;
+    color: #FF914D;
+    font-weight: 550;
+}
+
+.tp-card2 .adults, .Children{
+    width: 20px;
+    margin-top: 40px;
+    margin-left: 3px;
+    text-align: center;
+    color: #FF914D;
+    font-weight: 500;
+    border-bottom: 2px solid #FF914D;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-weight: 600;
+}
+
+.tp-card2 h1{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.tp-card2 .and{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 550;
+}
+/* type end  */
+
+.guest{
+    margin-top: 20px;
+}
+
+.g1{
+    width: 50%;
+    float: left;
+    background-color: transparent;
+    text-align: right;
+    height: 80px;
+}
+
+.g2{
+    width: 50%;
+    float: right;
+    background-color: transparent;
+    text-align: right;
+    height: 80px;
+    max-height: 80px;
+}
+
+
+.g1 .icon{  
+    display: inline-flex;
+    text-align: right;
+    padding-top: 7px;
+}
+
+.g1 .icon i{
+    padding-right: 15px ;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #FF914D;
+}
+
+.g1 .g-txt input{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    color: #FF914D;
+}
+
+
+
+.g1 .g-txt input::placeholder{
+    text-align: center;
+    color: #000;
+    padding-bottom: 7px;
+}
+
+.g2 .icon{  
+    display: inline-flex;
+    text-align: right;
+    padding-top: 7px;
+}
+
+.g2 .icon i{
+    padding-right: 15px ;
+    padding-left: 15px;
+    font-size: 20px;
+    color: #FF914D;
+}
+
+.g2 .g-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    margin-top: 12.5px;
+    color: #000;
+}
+
+.g2 .g-txt input{
+    margin-top: 7px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 30px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    color: #FF914D;
+}
+
+.g2 .g-txt input::placeholder{
+    text-align: center;
+    color: #000;
+    padding-bottom: 7px;
+}
+
+.payment{
+    margin-top: 150px;
+    margin-left: 135px;
+}
+
+.payment .form-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment .form-row input{
+    margin-top: 10px;
+    width: 100px;
+}
+
+.payment .form-row .frd2{
+    margin-left: 20px;
+    border: none;
+    color: #FF914D;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    text-align: left;
+}
+
+.payment .form-row .frd{
+    margin-left: 200px;
+    width: 170px;
+    border: none;
+    font-size: 17px;
+}
+
+.payment .form-row .frd2::placeholder{
+    font-size: 12px;
+}
+
+.frd::-webkit-calendar-picker-indicator{
+    filter: invert(0);
+}
+
+.choosefd{
+    color: #FF914D;
+    font-size: 17px;
+    font-weight: 600;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.payment .delete-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+  
+  .delete-svgIcon {
+    width: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .delete-svgIcon path {
+    fill: #FF914D;
+  }
+  
+  .delete-button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background: linear-gradient(45deg, #FF914D, #000);
+    align-items: center;
+  }
+  
+  .delete-button:hover .delete-svgIcon {
+    width: 10px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    
+}
+.delete-button::before {
+    display: none;
+    content: "حذف";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+    text-align: right;
+}
+
+.delete-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+}
+
+
+.conditions {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.conditions h1{
+    text-align: right;
+    color: #FF914D;
+    padding-right: 20px;
+}
+
+.conditions span{
+    text-align: right;
+    margin-top: 100px;
+    font-size: 17px ;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+

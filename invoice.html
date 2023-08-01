@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فاتورة شاليهات رسن</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="invoice.css">
+    <link rel="icon" href="photos/icon.icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <section class="main">
+            <div class="navbar" id="navbar">
+                <div class="logo-section">
+                    <div class="logo-date">
+                        
+                    </div>
+                    <img src="photos/logo.png" class="logo">
+                    <div class="invoice-word">
+                        <!-- <p class="arabic"> فاتورة رقميه <span>لشاليهات الرسن</span></p>
+                        <p> invoice for <span>Rassan chalet</span> </p> -->
+                    </div>
+                </div>
+
+                <!-- <hr> -->
+
+                <section class="guest">
+                    <div class="g1">
+                        <div class="icon">
+                            <h1>معلومات المستاجر</h1>
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+
+                        <div class="g-txt">
+                            <input type="text" name="text-input" placeholder="اكتب الاسم هنا">
+                        </div>
+                    </div>
+
+                    <div class="g2">
+                        <div class="icon">
+                            <h1>معلومات الفيلا</h1>
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <div class="g-txt">
+                            <span>شالية رسن | RASAN CHALET، ابن عدنان، ينبع</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info" id="info">
+                    <!-- card 1 -->
+                    <div class="card1">
+                        <div class="title">
+                            <div class="icon">
+                                <h1 class="tit"> رقم الفاتوره </h1>
+                                <i class="fa-solid fa-barcode"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="number-1">
+                            <input type="number" name="number" class="no">
+                        </div>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="card2">
+                        <div class="title">
+                            <div class="icon">
+                                <h1 class="tit">تاريخ الفاتورة</h1>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="number">
+
+                            <input type="text" name="number" class="day-no" placeholder="dd">
+                            <select class="choose-input">
+                                <option value=".Jan">Jan</option>
+                                <option value=".Feb">Feb</option>
+                                <option value=".Mar">Mar</option>
+                                <option value=".Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value=".Jun">Jun</option>
+                                <option value=".Jul">Jul</option>
+                                <option value=".Aug">Aug</option>
+                                <option value="Oct">Oct</option>
+                                <option value=".Sep">Sep</option>
+                                <option value=".Nov">Nov</option>
+                                <option value=".Dec">Dec</option>
+                            </select>
+
+                            <span class="year">2023</span>
+                        </div>
+                    </div>
+                        <!-- card3 -->
+                    <div class="card3">
+                        <div class="title">
+                            <div class="icon">
+                                <h1 class="tit">إجمالي الفاتورة</h1>
+                                <i class="fa-solid fa-credit-card"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="number-2">
+                            <input type="text" name="number" class="no">
+                            <span>ر.س</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="check">
+                    <!-- card1 -->
+                    <div class="ck-card">
+                        <div class="ck-title">
+                            <div class="ck-icon">
+                                <h1 class="ch1">تاريخ الوصول</h1>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+
+                            <div class="check-time-atday">
+                                <span class="ck-time"> (4:00pm - 4:30pm)</span>
+                            </div>
+                                <input type="date" id="date" name="date" class="date-no">
+                        </div>
+                    </div>
+                    <!-- card2 -->
+                    <div class="ck-card2">
+                        <div class="ck-title">
+                            <div class="ck-icon">
+                                <h1 class="ch1"> موعد انتهاء الاقامه</h1>
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div class="check-time-atday">
+                                <span class="ck-time">(1:30pm - 2:00pm)</span>
+                            </div>
+
+                            <div class="number">
+                                <input type="date" id="date" name="date" class="date-no">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="type">
+                    <div class="tp-card">
+                        <div class="tp-title">
+                            <h1>نوع الفيلا</h1>
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+
+                        
+                            <select id="select-input" class="choose-input">
+                                <option value="option1">Rassan 1 - A1</option>
+                                <option value="option2">Rassan 2 - A2</option>
+                                <option value="option3">Rassan  1 & 2 - A1 & 2</option>
+                            </select>
+                        
+                    </div>
+
+                    <div class="tp-card2">
+                        <div class="tp-title2">
+                            <h1>عدد الاشخاص</h1>
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+
+                        <span class="occup">البالغين</span>
+                        <input type="text" name="number" class="adults">
+
+                        <span class="and">و</span>
+
+                        <input type="text" name="number" class="Children">
+                        <span class="occup">أطفال</span>
+                        
+
+                    </div>
+                </section>
+
+                <section class="payment">
+                    <div id="form-container">
+                        <div class="form-row">
+                            
+                            <button class="delete-button">
+                                <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                </svg>
+                            </button>
+                            <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+
+                            <input type="date" class="frd">
+                            <select class="choosefd">
+                                <option value=".Jan">الأحد</option>
+                                <option value=".Feb">الاتنين</option>
+                                <option value=".Mar">الثلاثاء</option>
+                                <option value=".Apr">الأربعاء</option>
+                                <option value="May">الخميس</option>
+                                <option value=".Jun">الجمعه</option>
+                                <option value=".Jul">السبت</option>
+                                
+                            </select>
+                            <div class="form-row">
+                            
+                                <button class="delete-button">
+                                    <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                    <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                    </svg>
+                                </button>
+                                <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+    
+                                <input type="date" class="frd">
+                                <select class="choosefd">
+                                    <option value=".Jan">الأحد</option>
+                                    <option value=".Feb">الاتنين</option>
+                                    <option value=".Mar">الثلاثاء</option>
+                                    <option value=".Apr">الأربعاء</option>
+                                    <option value="May">الخميس</option>
+                                    <option value=".Jun">الجمعه</option>
+                                    <option value=".Jul">السبت</option>
+                                    
+                                </select><div class="form-row">
+                            
+                                    <button class="delete-button">
+                                        <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                        <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                        </svg>
+                                    </button>
+                                    <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+        
+                                    <input type="date" class="frd">
+                                    <select class="choosefd">
+                                        <option value=".Jan">الأحد</option>
+                                        <option value=".Feb">الاتنين</option>
+                                        <option value=".Mar">الثلاثاء</option>
+                                        <option value=".Apr">الأربعاء</option>
+                                        <option value="May">الخميس</option>
+                                        <option value=".Jun">الجمعه</option>
+                                        <option value=".Jul">السبت</option>
+                                        
+                                    </select><div class="form-row">
+                            
+                                        <button class="delete-button">
+                                            <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                            <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                            </svg>
+                                        </button>
+                                        <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+            
+                                        <input type="date" class="frd">
+                                        <select class="choosefd">
+                                            <option value=".Jan">الأحد</option>
+                                            <option value=".Feb">الاتنين</option>
+                                            <option value=".Mar">الثلاثاء</option>
+                                            <option value=".Apr">الأربعاء</option>
+                                            <option value="May">الخميس</option>
+                                            <option value=".Jun">الجمعه</option>
+                                            <option value=".Jul">السبت</option>
+                                            
+                                        </select><div class="form-row">
+                            
+                                            <button class="delete-button">
+                                                <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                                <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                                </svg>
+                                            </button>
+                                            <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+                
+                                            <input type="date" class="frd">
+                                            <select class="choosefd">
+                                                <option value=".Jan">الأحد</option>
+                                                <option value=".Feb">الاتنين</option>
+                                                <option value=".Mar">الثلاثاء</option>
+                                                <option value=".Apr">الأربعاء</option>
+                                                <option value="May">الخميس</option>
+                                                <option value=".Jun">الجمعه</option>
+                                                <option value=".Jul">السبت</option>
+                                                
+                                            </select><div class="form-row">
+                            
+                                                <button class="delete-button">
+                                                    <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                                    <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                                    </svg>
+                                                </button>
+                                                <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+                    
+                                                <input type="date" class="frd">
+                                                <select class="choosefd">
+                                                    <option value=".Jan">الأحد</option>
+                                                    <option value=".Feb">الاتنين</option>
+                                                    <option value=".Mar">الثلاثاء</option>
+                                                    <option value=".Apr">الأربعاء</option>
+                                                    <option value="May">الخميس</option>
+                                                    <option value=".Jun">الجمعه</option>
+                                                    <option value=".Jul">السبت</option>
+                                                    
+                                                </select><div class="form-row">
+                            
+                                                    <button class="delete-button">
+                                                        <svg class="delete-svgIcon" viewBox="0 0 448 512">
+                                                        <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"></path>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" placeholder="اكتب السعر اليوم هنا"  class="frd2" >
+                        
+                                                    <input type="date" class="frd">
+                                                    <select class="choosefd">
+                                                        <option value=".Jan">الأحد</option>
+                                                        <option value=".Feb">الاتنين</option>
+                                                        <option value=".Mar">الثلاثاء</option>
+                                                        <option value=".Apr">الأربعاء</option>
+                                                        <option value="May">الخميس</option>
+                                                        <option value=".Jun">الجمعه</option>
+                                                        <option value=".Jul">السبت</option>
+                                                        
+                                                    </select>
+                </section>
+
+                <section class="conditions">
+                    <h1>الاحكام والشروط</h1>
+                    <span>وقت الدخول المسموح به في اليوم المحجوز من الساعه الرابعه عصرا الي الرابعه ونصف -</span>
+                    <br>
+                    <span>وقت الخروج المسموح به خلال يوم المغادره هو من الساعه الواحده ونصف ظهرا الي الساعه الثانيه ظهرا -</span>
+                    <br>
+                    <span> تسليم الاستراحه بحالة جيده وسليمه دون اي عيوب والمحافظة على الاستراحه محافظة تامه -</span>
+                    <br>
+                    <span> لايحق للمستاجر تاجير الاستراحه الا باذن من المؤجر -</span>
+                    <br>
+                    <span> يمنع منعاً باتاً استخدام الاستراحه في اغراض مننوعه او محظورة وتكون المسئولية على المستأجر امام السلطات المحلية والقضائية -</span>
+                    <br>
+                    <span>ان المؤجر غير مسؤول عن اية اضرار او اخطار تقع لاقدر الله في الارواح او فقدان للممتلكات الخاصة -</span>
+                    <br>
+                    <span> يخصم التأمين في حالة تلف او كسر اي من ممتلكات الاستراحه وفي حال كان الضرر اكبر من قيمة التأمين يلزم المستاجر دفع الفرق -</span>
+                    <br>
+                    <span> يدفع المبلغ كاملاً عند استلام الاستراحه -</span>
+                    <br>
+                    <span> يمنع استخدام الالعاب النارية داخل الاستراحة -</span>
+                    <br>
+                    <span> عدم دخول الاطعمة والمشروبات داخل المسبح -</span>
+                    <br>
+                    <span> لايحق للمستأجر الغاء العقد اواسترجاع المبلغ -</span>
+
+                </section>
+            </div>
+            
+        </section>
+        
+        <script src="invoice.js"></script>
+    </body>
+    </html>
+    
