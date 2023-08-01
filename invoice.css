@@ -321,6 +321,12 @@ hr{
     font-size: 15px;
     font-weight: 600;
     padding-bottom: 7px;
+    background-color: #ffffff;
+    color: #FF914D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000000;
 }
 
 
@@ -334,6 +340,12 @@ hr{
 
 .ck-card2 .number .date-no{
     padding-bottom: 9px;
+    background-color: #ffffff;
+    color: #FF914D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000000;
 }
 
 /* check end  */
