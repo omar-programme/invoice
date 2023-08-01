@@ -24,7 +24,7 @@ body{
 .main{
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 100%;
     height: 110vh;
     background-color: #FFF;
     border: 1px solid #FF914D;
