@@ -334,8 +334,8 @@ hr{
 /* type start  */
 
 .tp-card{
-    width: 50%;
-    float: left;
+    margin-top: 20px;
+    align-items: center;
     height: 75px;
 }
 
@@ -615,6 +615,31 @@ hr{
     transform: translateY(0px);
     transition-duration: 0.3s;
 }
+
+.payment .delete-button1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+  
+  .delete-svgIcon1 {
+    width: 10px;
+    transition-duration: 0.3s;
+  }
+  
+  .delete-svgIcon1 path {
+    fill: transparent;
+  }
 
 
 .conditions {
