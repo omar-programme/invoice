@@ -537,7 +537,8 @@ hr{
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #FF914D;
+    border-bottom: 1px solid #000000;
+    color: #000000;
 }
 
 .payment .form-row .frd2::placeholder{
