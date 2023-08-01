@@ -577,6 +577,7 @@ hr{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    background-color: #ffffff;
 }
 
 .payment .delete-button {
