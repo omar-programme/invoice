@@ -196,18 +196,10 @@ hr{
     text-align: right;
 }
 
-.choose-input {
-    /* widh: 100pxpx; */
-    padding: 10px;
-    border: none;
-    /* border-radius: 5px; */
-    /* background-color: #f2f2f2; */
-    font-size: 16px;
-    color: #000;
-    -webkit-appearance: none; /* Remove the default arrows on Chrome/Safari */
-    -moz-appearance: none; /* Remove the default arrows on Firefox */
-    appearance: none; /* Remove the default arrows on other browsers */
+.number .nd{
+    padding-top: 15px;
 }
+
 
   /* Style for the "Choose" input when clicked */
 .choose-input:focus {
