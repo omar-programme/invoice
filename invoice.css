@@ -534,6 +534,7 @@ hr{
     width: 170px;
     border: none;
     font-size: 17px;
+    background-color: #ffffff;
 }
 
 .payment .form-row .frd2::placeholder{
