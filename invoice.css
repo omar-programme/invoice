@@ -198,6 +198,13 @@ hr{
 
 .number .nd{
     padding-top: 15px;
+    margin-top: 7px;
+    background-color: #ffffff;
+    color: #FF914D;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000000;
 }
 
 
