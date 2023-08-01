@@ -532,9 +532,12 @@ hr{
 .payment .form-row .frd{
     margin-left: 200px;
     width: 170px;
-    border: none;
     font-size: 17px;
     background-color: #ffffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #FF914D;
 }
 
 .payment .form-row .frd2::placeholder{
